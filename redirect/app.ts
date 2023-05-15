@@ -26,8 +26,8 @@ export const lambdaHandler = async (event: APIGatewayProxyEvent): Promise<APIGat
         }
         response = {
             statusCode: 301,
-            // headers: { Location: `https://url-shortner-79aa8.web.app/error?err=${message}` },
-            headers: { Location: `http://localhost:3000/error?err=${message}` },
+            headers: { Location: `https://url-shortner-79aa8.web.app/error?err=${message}` },
+            // headers: { Location: `http://localhost:3000/error?err=${message}` },
             body: JSON.stringify({
                 err
             }),
