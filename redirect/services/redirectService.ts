@@ -7,6 +7,6 @@ export const handle = async (ctx: any, id: string) => {
         throw new Error('Url not found')
     }
 
-    await helper.addClick(ctx, id, (url.clicks + 1))
+    await helper.addClick(ctx, id, (url.clicks + 1), url)
     return url
 }
